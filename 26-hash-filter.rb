@@ -18,6 +18,7 @@ end
 result = []
 result = a.sort_by{ |i| i["age"]}
 
+result = arr.select{|i| i["age"] >= 18}.sort{|a,b| a["age"]<=> b["age"]}
 puts "所有成年人，并由小到大: _#{result}__"
 
 # 答案应该是
