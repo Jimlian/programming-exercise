@@ -14,7 +14,17 @@ end
 
 puts arr.to_s
 
-puts "总和是 _____"
-puts "平均是 _____"
-puts "最大值是 _____"
-puts "最小值是 _____"
+def find_sum(array)
+  sum = 0
+  array.each do |i|
+    sum = sum + i
+  end
+  return sum
+end
+
+sum = find_sum(arr)
+
+puts "总和是 _#{sum}____"
+puts "平均是 ___#{sum/arr.size}__"
+puts "最大值是 __#{arr.max}___"
+puts "最小值是 __#{arr.min}___"
